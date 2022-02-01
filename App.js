@@ -8,7 +8,7 @@ export default function App() {
   const[task, setTask] = useState();
   const[taskItem,setTaskItem] = useState([]);
   const handleAddTask = () =>{
-    setTaskItem(...taskItem, task)
+    setTaskItem([...taskItem, task])
     setTask(null);
   }
   return (
